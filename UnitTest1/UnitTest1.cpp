@@ -25,7 +25,8 @@ namespace Tests
 			Assert::AreEqual(data[0].currdate.year, 2020);
 			Assert::AreEqual(data[0].currdate.month, 10);
 			Assert::AreEqual(data[0].currtime.hour, 12);
-			// Assert::AreEqual(data[0].name, "John");
+			string namech = "John";
+			Assert::AreEqual(data[0].name, namech);
 		}
 
 		TEST_METHOD(InvalidData)
@@ -80,7 +81,7 @@ namespace Tests
 		TEST_METHOD(InvalidTime)
 		{
 			Time1 t;
-			std::istringstream input("25:102");
+			std::istringstream input("ab:jfj");
 
 			Assert::ExpectException<std::runtime_error>([&] {
 				t.set_time(input);

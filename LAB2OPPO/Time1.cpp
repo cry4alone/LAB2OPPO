@@ -7,6 +7,7 @@ void Time1::set_time(std::istream& ist)
 	char doubledot = ':';
 	if (doubledot != ist.get()) { throw std::runtime_error("Expected double dot"); }
 	ist >> min;
+	if (ist.fail()) { throw std::runtime_error("stream fail"); }
 	check_time();
 }
 
