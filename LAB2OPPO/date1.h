@@ -4,11 +4,10 @@
 #include <vector>
 #include <string>
 class date1 {
-private:
+public:
     int day;
     int month;
     int year;
-public:
     void set_Date(std::istream& ist);
     void print_Date() const;
     void read_file(std::istream& ist);

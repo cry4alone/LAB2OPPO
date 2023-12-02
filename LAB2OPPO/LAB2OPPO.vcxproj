@@ -127,14 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\cry4alone\LAB2_OPPO\date.cpp" />
     <ClCompile Include="date1.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Time1.cpp" />
     <ClCompile Include="zan.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\cry4alone\LAB2_OPPO\date.h" />
     <ClInclude Include="date1.h" />
     <ClInclude Include="Time1.h" />
     <ClInclude Include="zan.h" />

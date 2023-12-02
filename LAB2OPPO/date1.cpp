@@ -22,7 +22,7 @@ void date1::read_file(std::istream& ist)
     dot = ist.get();
     if (dot != '.') { throw std::runtime_error("Expected dot"); }
     ist >> day;
-    if (!ist.good()) { throw std::runtime_error("string fail"); }
+    //if (!ist.good()) { throw std::runtime_error("string fail"); }
 }
 
 void date1::check_file(std::istream& ist)
