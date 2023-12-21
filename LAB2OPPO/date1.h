@@ -1,7 +1,7 @@
 #pragma once
 #include <fstream>
 #include <iostream>
-#include <vector>
+#include <array>
 #include <string>
 class date1 {
 public:
@@ -14,5 +14,10 @@ public:
     void check_file(std::istream& ist);
     static bool check_year(int year);
 };
+
+namespace vec {
+    constexpr std::array<int, 12> days_of_month = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    constexpr std::array<int, 12> days_of_month_v = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+}
 
 

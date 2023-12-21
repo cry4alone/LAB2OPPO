@@ -1,4 +1,8 @@
-﻿#include "zan.h"
+﻿// This is a personal academic project. Dear PVS-Studio, please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
+#include <vld.h>
+#include "zan.h"
 #include <vector>
 #include <fstream>
 #include <iostream>
@@ -8,7 +12,7 @@ using namespace std;
 int load(vector<Zan>& data, istream& ist)
 {
     int size = 0;
-    while (!ist.eof())
+    while (!ist.eof() && !cin.fail())
     {
         Zan newClass;
         newClass.load_txt(ist);
@@ -31,7 +35,7 @@ int main()
 {
     setlocale(0, "");
     vector <Zan> data;
-    ifstream in("in3.txt");
+    ifstream in("C:\\Users\\andre\\source\\repos\\LAB2OPPO\\LAB2OPPO\\in3.txt");
     if (!in.is_open())
     {
         cout << "Файл не открыт" << endl;

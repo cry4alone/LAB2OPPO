@@ -1,3 +1,6 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
 #include "pch.h"
 #include "CppUnitTest.h"
 #include <vector>
@@ -57,7 +60,7 @@ namespace Tests
 		TEST_METHOD(InvalidDate)
 		{
 			date1 d;
-			std::istringstream input("2020?15.40");
+			std::istringstream input("2020.15.40");
 
 			Assert::ExpectException<std::runtime_error>([&] {
 				d.set_Date(input);
